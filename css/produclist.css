@@ -1,3 +1,29 @@
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.slash {
+  margin-inline: 10px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--tertiary);
+  border-bottom: solid 3px var(--secondary);
+  border-radius: 3px;
+
+  font-size: 1.3rem;
+}
+
+.current a {
+  border-bottom: solid 0px var(--secondary);
+}
+
 h2 {
   margin-top: 100px;
   font-family: "caecilia", sans-serif;
