@@ -1,0 +1,145 @@
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.slash {
+  margin-inline: 10px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--tertiary);
+  border-bottom: solid 3px var(--secondary);
+  border-radius: 3px;
+
+  font-size: 1.3rem;
+}
+
+.current a {
+  border-bottom: solid 0px var(--secondary);
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+
+  margin-top: 80px;
+}
+
+h2 {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+.id p {
+  font-size: 0.9rem;
+  color: #0a090950;
+
+  margin-top: 10px;
+}
+
+.price {
+  border-bottom: solid 2px #e4e4e4;
+}
+
+.price p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.color p {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.color {
+  margin-top: 10px;
+}
+
+.purchaseBox {
+  margin-top: 50px;
+}
+
+.product-size {
+  background-color: #e4e4e480;
+  border-radius: 3px;
+}
+
+.product-size p {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+  font-size: 1.2rem;
+
+  padding: 20px;
+}
+
+form {
+  margin-top: 30px;
+}
+
+label {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+select {
+  width: 400px;
+  height: 40px;
+
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.1rem;
+
+  border: solid 1px var(--tertiary);
+  border-radius: 3px;
+  background-color: transparent;
+
+  margin-top: 10px;
+}
+
+button {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: solid 1px var(--primary);
+  border-radius: 4px;
+
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  width: 150px;
+  height: 45px;
+
+  margin-top: 20px;
+}
