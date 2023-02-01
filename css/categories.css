@@ -1,0 +1,96 @@
+main {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.shop-deal {
+  margin-top: 100px;
+  padding: 100px;
+  background-color: var(--quinary);
+  border-radius: 3px;
+}
+
+.shop-deal h2 {
+  font-family: "hobeaux-rococeaux-background", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-left: -10px;
+}
+
+.shop-deal h3 {
+  font-size: 2rem;
+  padding-left: 15px;
+}
+
+.shop-deal p {
+  padding-top: 30px;
+  font-size: 1rem;
+}
+
+.shop {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.shop a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--tertiary);
+  border: solid 1px var(--tertiary);
+  border-radius: 3px;
+  padding-block: 10px;
+  padding-inline: 15px;
+}
+
+.shop a:hover {
+  color: var(--primary);
+  border: solid 1px var(--primary);
+}
+
+.categories-list {
+  margin-top: 50px;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.categories-list ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.categories-list ul {
+  list-style: none;
+}
+
+.categories-list li {
+  text-align: center;
+}
+
+.categories-list a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "dolly-new", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--tertiary);
+  background-color: var(--secondary);
+
+  display: block;
+  padding-block: 10px;
+  margin-block: 5px;
+  width: 250px;
+  border-radius: 3px;
+}
+
+.categories-list a:hover {
+  color: var(--secondary);
+  background-color: #252525;
+}

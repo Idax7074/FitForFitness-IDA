@@ -17,13 +17,13 @@ body {
   font-family: "dolly-new", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.5rem;
   background-color: var(--primary);
   color: var(--tertiary);
-  font-size: 1rem;
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
@@ -37,6 +37,7 @@ h1 {
   font-family: "rig-solid-bold-fill", sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 3rem;
 }
 
 h1 span {
@@ -51,6 +52,11 @@ h1 span {
 @media (min-width: 812px) {
   .logo {
     position: absolute;
+  }
+
+  .logo a {
+    color: var(--tertiary);
+    text-decoration: none;
   }
 
   .header-info {
@@ -73,6 +79,7 @@ h1 span {
   .logo-menu {
     padding-top: 25px;
     padding-bottom: 20px;
+    padding-inline: 50px;
   }
 
   .main-menu {
@@ -104,6 +111,7 @@ h1 span {
     font-weight: 400;
     font-style: normal;
     color: var(--tertiary);
+    font-size: 1rem;
 
     border: solid var(--senary) 1px;
     padding-block: 5px;
