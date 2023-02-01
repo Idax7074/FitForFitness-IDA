@@ -1,0 +1,49 @@
+html {
+  --primary: #faf9f6;
+  --secondary: #e4e4e4;
+  --tertiary: #0a0909;
+  --quaternary: #85b6b1;
+  --quinary: #fba2a2;
+  --senary: #ed7a3c;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "dolly-new", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--primary);
+  color: var(--tertiary);
+  font-size: 1rem;
+}
+
+main {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-family: "rig-solid-bold-fill", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+span {
+  display: inline-block;
+  transform: scaleX(-1);
+  color: var(--senary);
+  font-family: "rig-solid-bold-reverse", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
