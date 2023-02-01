@@ -1,0 +1,119 @@
+h2 {
+  margin-top: 100px;
+  font-family: "caecilia", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+.productlist {
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.productlist div {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+
+  margin-top: 10px;
+}
+
+h4 {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+p {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.price {
+  margin-top: 20px;
+}
+
+.deal p {
+  color: var(--senary);
+}
+
+.original {
+  display: flex;
+}
+
+.original > * {
+  padding-block: 10px;
+}
+
+.original > p {
+  padding-inline: 7px;
+}
+
+.original p {
+  font-size: 1rem;
+}
+
+.original p span {
+  text-decoration: line-through;
+  color: var(--tertiary);
+}
+
+.footwear {
+  background-color: var(--secondary);
+  height: 650px;
+}
+
+.footwear a {
+  color: var(--tertiary);
+  text-decoration: none;
+  display: block;
+}
+
+.img a {
+  border: solid 5px var(--secondary);
+}
+
+.img a:hover {
+  border: solid 5px var(--quaternary);
+}
+
+.soldout a img {
+  opacity: 0.5;
+}
+
+.soldout {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.soldout-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.soldout-text h5 {
+  color: var(--quinary);
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: "dolly-new", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #25252550;
+  border-radius: 3px;
+}

@@ -114,6 +114,7 @@ h1 span {
     font-size: 1rem;
 
     border: solid var(--senary) 1px;
+    border-radius: 3px;
     padding-block: 5px;
     padding-inline: 15px;
   }
