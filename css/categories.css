@@ -56,8 +56,10 @@ main {
 
 .categories-list {
   margin-top: 50px;
-  max-width: 950px;
+  max-width: 1000px;
   margin-inline: auto;
+
+  margin-bottom: 50px;
 }
 
 .categories-list ul {
@@ -71,6 +73,9 @@ main {
 
 .categories-list li {
   text-align: center;
+
+  display: flex;
+  justify-content: center;
 }
 
 .categories-list a {

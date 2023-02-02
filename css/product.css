@@ -1,3 +1,7 @@
+img {
+  border-radius: 3px;
+}
+
 .breadcrumbs {
   list-style: none;
   display: flex;
@@ -20,7 +24,15 @@
   font-size: 1.3rem;
 }
 
+.breadcrumbs a:hover {
+  border-bottom: solid 3px #c9c9c9;
+}
+
 .current a {
+  border-bottom: solid 0px var(--secondary);
+}
+
+.current a:hover {
   border-bottom: solid 0px var(--secondary);
 }
 
@@ -30,6 +42,7 @@
   gap: 100px;
 
   margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -62,7 +75,7 @@ p {
 }
 
 .price {
-  border-bottom: solid 2px #e4e4e4;
+  border-bottom: solid 2px var(--quaternary);
 }
 
 .price p {
@@ -70,16 +83,37 @@ p {
   margin-bottom: 10px;
 }
 
+.color-year {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-top: 10px;
+}
+
 .color p {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
-.color {
-  margin-top: 10px;
+.year p {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.type p {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1rem;
+
+  margin-top: 30px;
 }
 
 .purchaseBox {
@@ -130,7 +164,7 @@ select {
 }
 
 button {
-  background-color: var(--tertiary);
+  background-color: var(--quaternary);
   color: var(--primary);
   border: solid 1px var(--primary);
   border-radius: 4px;

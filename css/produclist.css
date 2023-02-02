@@ -20,7 +20,15 @@
   font-size: 1.3rem;
 }
 
+.breadcrumbs a:hover {
+  border-bottom: solid 3px #c9c9c9;
+}
+
 .current a {
+  border-bottom: solid 0px var(--secondary);
+}
+
+.current a:hover {
   border-bottom: solid 0px var(--secondary);
 }
 
