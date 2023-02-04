@@ -1,3 +1,4 @@
+/*Brødkrummesti*/
 .breadcrumbs {
   list-style: none;
   display: flex;
@@ -32,24 +33,22 @@
   border-bottom: solid 0px var(--secondary);
 }
 
+/*Productlist*/
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
 h2 {
   margin-top: 100px;
   font-family: "caecilia", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 2.5rem;
-}
 
-.productlist {
-  margin-top: 50px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-}
-
-.productlist div {
-  margin-bottom: 20px;
+  grid-column: 1 / span 3;
 }
 
 h3 {
@@ -77,54 +76,45 @@ p {
 }
 
 .price {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
-.deal p {
+.prev {
+  margin-right: 5px;
+  display: none;
+}
+
+.procent {
+  margin-inline: 15px;
   color: var(--senary);
 }
 
-.original {
+.discounted {
   display: flex;
+  margin-top: 10px;
+  display: none;
 }
 
-.original > * {
-  padding-block: 10px;
-}
-
-.original > p {
-  padding-inline: 7px;
-}
-
-.original p {
-  font-size: 1rem;
-}
-
-.original p span {
-  text-decoration: line-through;
-  color: var(--tertiary);
-}
-
-.footwear {
+.smallProduct {
   background-color: var(--secondary);
-  height: 650px;
+  height: 660px;
 }
 
-.footwear a {
+.smallProduct a {
   color: var(--tertiary);
   text-decoration: none;
   display: block;
 }
 
-.img a {
+.img {
   border: solid 5px var(--secondary);
 }
 
-.img a:hover {
+.img:hover {
   border: solid 5px var(--quaternary);
 }
 
-.soldout a img {
+.soldout img {
   opacity: 0.5;
 }
 
