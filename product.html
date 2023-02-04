@@ -29,9 +29,9 @@
             <span class="bar3"></span>
           </button>
           <ul>
-            <li><a href="categories.html">Women</a></li>
-            <li><a href="categories.html">Men</a></li>
-            <li><a href="categories.html">Children</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="categories.html">Brands</a></li>
+            <li><a href="categories.html">Seasons</a></li>
           </ul>
         </nav>
       </div>
@@ -40,42 +40,46 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Home</a></li>
         <li class="slash">/</li>
-        <li><a href="categories.html">Men</a></li>
+        <li>
+          <a href="categories.html"> <span class="category">Men</span></a>
+        </li>
         <li class="slash">/</li>
-        <li><a href="productlist.html">Footwear</a></li>
+        <li>
+          <a href="productlist.html"> <span class="subcategory">Footwear</span></a>
+        </li>
         <li class="slash">/</li>
-        <li class="current"><a href="#">Cell Exsis Sneaker</a></li>
+        <li class="current">
+          <a href="#"> <span class="displayname">Cell Exsis Sneaker</span></a>
+        </li>
       </ul>
       <section class="product">
         <div class="">
           <img src="https://kea-alt-del.dk/t7/images/webp/1000/1548.webp" alt="Puma shoes" />
         </div>
         <div class="shop-info">
-          <div class="info">
-            <h2>Puma</h2>
-            <h3>Cell Exsis Sneaker</h3>
-            <div class="id">
-              <p>ID 1548</p>
+          <h2>Puma</h2>
+          <h3>Cell Exsis Sneaker</h3>
+          <div class="id">
+            <p>ID <span class="id-nr">1548</span></p>
+          </div>
+          <br />
+          <div class="price">
+            <p><span class="product-price">3999</span>,-</p>
+          </div>
+          <div class="color-year">
+            <div class="color">
+              <p>Color:<span class="product-color">White/grey</span></p>
             </div>
-            <br />
-            <div class="price">
-              <p>3999,-</p>
+            <div class="year">
+              <p>Production year:<span class="product-year">2010</span></p>
             </div>
-            <div class="color-year">
-              <div class="color">
-                <p>Color: White/grey</p>
-              </div>
-              <div class="year">
-                <p>Production year: 2010</p>
-              </div>
-              <div class="type">
-                <p>Type: Sports shoes</p>
-              </div>
+            <div class="type">
+              <p>Type: <span class="product-type">Sports shoes</span></p>
             </div>
           </div>
           <br />
           <div class="purchaseBox">
-            <div class="product-size">
+            <div class="description">
               <p>The product is small in size, and we therefore recommend going up a size</p>
             </div>
             <form action="action_page">
@@ -106,8 +110,8 @@
         <div class="col_1">
           <h3>Contact</h3>
           <h4>Opening hours</h4>
-          <p>Man - fre 10.00 - 19.00</p>
-          <p>Lør - søn 10.00 - 14.00</p>
+          <p>Mon - fri 10am - 7pm</p>
+          <p>Sat - sun 10am - 2pm</p>
           <p>Holidays closed</p>
           <div class="social-icons">
             <a href="https://www.facebook.com/idahjortnaes/"><i class="fab fa-facebook"></i></a>
@@ -135,11 +139,12 @@
       </div>
       <div class="overview">
         <h3>Category - Overview</h3>
-        <a href="categories.html">Women</a>
-        <a href="categories.html">Men</a>
-        <a href="categories.html">Children</a>
+        <a href="categories.html">Categories</a>
+        <a href="categories.html">Brands</a>
+        <a href="categories.html">Seasons</a>
       </div>
     </footer>
-    <script src="burgermenu.js"></script>
+    <script src="js/burgermenu.js"></script>
+    <script src="js/product.js"></script>
   </body>
 </html>

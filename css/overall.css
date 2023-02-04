@@ -72,7 +72,7 @@ h1 span {
     font-size: 0.8rem;
   }
 
-  p span {
+  .header-info p span {
     color: var(--senary);
   }
 
@@ -115,8 +115,7 @@ h1 span {
 
     border: solid var(--senary) 1px;
     border-radius: 3px;
-    padding-block: 5px;
-    padding-inline: 15px;
+    padding-block: 10px;
   }
 
   .main-menu a:hover {
@@ -163,7 +162,7 @@ h1 span {
     font-size: 0.8rem;
   }
 
-  p span {
+  .header-info p span {
     color: var(--senary);
   }
 
