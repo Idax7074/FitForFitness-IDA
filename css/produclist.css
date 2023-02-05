@@ -75,6 +75,17 @@ p {
   font-size: 1.2rem;
 }
 
+.smallProduct {
+  background-color: var(--secondary);
+  height: 660px;
+}
+
+.smallProduct a {
+  color: var(--tertiary);
+  text-decoration: none;
+  display: block;
+}
+
 .price {
   margin-top: 15px;
 }
@@ -95,17 +106,6 @@ p {
   display: none;
 }
 
-.smallProduct {
-  background-color: var(--secondary);
-  height: 660px;
-}
-
-.smallProduct a {
-  color: var(--tertiary);
-  text-decoration: none;
-  display: block;
-}
-
 .img {
   border: solid 5px var(--secondary);
 }
@@ -114,30 +114,24 @@ p {
   border: solid 5px var(--quaternary);
 }
 
+article.soldOut::before {
+  content: "Sold out";
+  position: absolute;
+  background-color: #252525;
+  color: var(--primary);
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "dolly-new", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 5px;
+}
+
 .soldout img {
   opacity: 0.5;
 }
 
 .soldout {
   position: relative;
-  text-align: center;
-  color: white;
-}
-
-.soldout-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.soldout-text h5 {
-  color: var(--quinary);
-  text-transform: uppercase;
-  font-size: 3rem;
-  font-family: "dolly-new", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  background-color: #25252550;
-  border-radius: 3px;
 }
