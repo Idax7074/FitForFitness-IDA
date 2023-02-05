@@ -65,19 +65,20 @@ h4 {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 p {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .smallProduct {
   background-color: var(--secondary);
   height: 660px;
+  border-radius: 3px;
 }
 
 .smallProduct a {
@@ -86,24 +87,27 @@ p {
   display: block;
 }
 
-.price {
-  margin-top: 15px;
-}
-
 .prev {
   margin-right: 5px;
   display: none;
 }
 
-.procent {
-  margin-inline: 15px;
+.pricetag {
+  margin-top: 15px;
+  display: flex;
+}
+
+.discount {
+  margin-left: 40px;
   color: var(--senary);
 }
 
 .discounted {
-  display: flex;
-  margin-top: 10px;
   display: none;
+}
+
+img {
+  border-radius: 3px;
 }
 
 .img {
@@ -114,7 +118,7 @@ p {
   border: solid 5px var(--quaternary);
 }
 
-article.soldOut::before {
+article.soldOut a::before {
   content: "Sold out";
   position: absolute;
   background-color: #252525;
@@ -125,13 +129,18 @@ article.soldOut::before {
   font-family: "dolly-new", sans-serif;
   font-weight: 500;
   font-style: normal;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
-.soldout img {
+article.soldOut a img {
   opacity: 0.5;
 }
 
-.soldout {
-  position: relative;
+article.onSale .discounted {
+  display: flex;
+  margin-top: 10px;
+}
+
+article.onSale .pricetag .price .prev {
+  display: flex;
 }

@@ -45,36 +45,44 @@
     </ul>
     <main>
       <h2>Footwear</h2>
-      <article class="smallProduct onSale">
+      <template id="smallProductTemplate">
+        <article class="smallProduct">
+          <a href="product.html" class="img">
+            <img src="https://kea-alt-del.dk/t7/images/webp/640/1544.webp" alt="Puma" />
+          </a>
+          <h3>Puma</h3>
+          <h4>Basket Bump Sneaker</h4>
+          <div class="pricetag">
+            <p class="price"><span class="prev">Prev</span>3499</p>
+            <p>,-</p>
+          </div>
+          <div class="discounted">
+            <p>Now <span class="priceNow">2624</span>,-</p>
+            <p class="discount">-<span class="procent">25</span>%</p>
+          </div>
+        </article>
+      </template>
+      <!-- <article class="smallProduct onSale">
         <a href="product.html" class="img">
           <img src="https://kea-alt-del.dk/t7/images/webp/640/1541.webp" alt="Puma" />
         </a>
         <h3>Puma</h3>
         <p>Ballistic Spike hite Green Shoe</p>
-        <p class="price"><span class="prev">Prev</span>5299,-</p>
+        <div class="pricetag">
+        <p class="price"><span class="prev">Prev</span>5299</p>
+        <p>,-</p>
+        </div>
         <div class="discounted">
           <p>Now 5299,-</p>
-          <p class="procent">-25%</p>
+          <p class="discount">-<span class="procent">25</span>%</p>
         </div>
       </article>
       <article class="smallProduct soldOut">
         <a href="product.html" class="img soldout">
-          <img src="https://kea-alt-del.dk/t7/images/webp/640/1543.webp" alt="Puma" />
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/1543.webp" alt="Puma"/>
         </a>
         <h3>Puma</h3>
         <p>Basket-Biz Sneaker</p>
-        <p class="price"><span class="prev">Prev</span>3499,-</p>
-        <div class="discounted">
-          <p>Now 2624,-</p>
-          <p class="procent">-25%</p>
-        </div>
-      </article>
-      <article class="smallProduct">
-        <a href="product.html" class="img">
-          <img src="https://kea-alt-del.dk/t7/images/webp/640/1544.webp" alt="Puma" />
-        </a>
-        <h3>Puma</h3>
-        <p>Basket Bump Sneaker</p>
         <p class="price"><span class="prev">Prev</span>3499,-</p>
         <div class="discounted">
           <p>Now 2624,-</p>
@@ -92,7 +100,7 @@
           <p>Now 2600,-</p>
           <p class="procent">-35%</p>
         </div>
-      </article>
+      </article> -->
     </main>
     <footer id="footer">
       <div class="footer">
@@ -134,5 +142,6 @@
       </div>
     </footer>
     <script src="js/burgermenu.js"></script>
+    <script src="js/productlist.js"></script>
   </body>
 </html>
