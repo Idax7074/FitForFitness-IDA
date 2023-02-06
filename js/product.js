@@ -8,19 +8,27 @@ function showProduct(product) {
   console.log(product);
 
   document.querySelector(".breadcrumbs .category").textContent = product.category;
+
   document.querySelector(".breadcrumbs .subcategory").textContent = product.subcategory;
+
   document.querySelector(".breadcrumbs .displayname").textContent = product.productdisplayname;
 
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
   document.querySelector(".shop-info h3").textContent = product.productdisplayname;
+
   document.querySelector(".shop-info .id .id-nr").textContent = product.id;
+
   document.querySelector(".shop-info h2").textContent = product.brandname;
 
   document.querySelector(".shop-info .color-year .color .product-color").textContent = product.basecolour;
+
   document.querySelector(".shop-info .color-year .year .product-year").textContent = product.productionyear;
+
   document.querySelector(".shop-info .price .product-price").textContent = product.price;
+
   document.querySelector(".shop-info .type .product-type").textContent = product.articletype;
+
   document.querySelector(".purchaseBox .description p").textContent = product.description;
 }
 
