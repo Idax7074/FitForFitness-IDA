@@ -34,6 +34,7 @@ function showProduct(product) {
   console.log(newPrice);
 
   copy.querySelector(".readMore").setAttribute("href", `product.html?id=${product.id}`);
+
   if (product.soldout) {
     //Produktet er udsolgt
     copy.querySelector("article").classList.add("soldOut");
