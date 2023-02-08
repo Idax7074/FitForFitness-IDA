@@ -12,8 +12,20 @@ main {
 .shop-deal {
   margin-top: 100px;
   padding: 100px;
-  background-color: var(--quinary);
+
   border-radius: 3px;
+}
+
+.shoes {
+  background-color: var(--quinary);
+}
+
+.tshirt {
+  background-color: var(--quaternary);
+}
+
+.textTshirt {
+  text-align: end;
 }
 
 .shop-deal h2 {
@@ -54,17 +66,59 @@ main {
   border: solid 1px var(--primary);
 }
 
+.wave a {
+  border: dashed 2px var(--tertiary);
+}
+
+.wave a:hover {
+  border: dashed 2px var(--primary);
+}
+
+.t-shirt {
+  width: 350px;
+}
+
+h4 {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 .categories-list {
   margin-top: 50px;
-  max-width: 1000px;
+  max-width: 900px;
   margin-inline: auto;
 
   margin-bottom: 50px;
 }
 
-.categories-list ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.subcategories-list {
+  display: flex;
+}
+
+.categorySubcategory {
+  display: flex;
+  gap: 20px;
+}
+
+.categorySubcategory a {
+  margin-top: 5px;
+}
+
+.categorySubcategory a {
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "dolly-new", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--tertiary);
+}
+
+.categorySubcategory a:hover {
+  text-decoration: underline;
 }
 
 .categories-list ul {
@@ -78,8 +132,8 @@ main {
   justify-content: center;
 }
 
-.categories-list a {
-  font-size: 1.1rem;
+.subcategories-list a {
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "dolly-new", sans-serif;
@@ -89,13 +143,18 @@ main {
   background-color: var(--secondary);
 
   display: block;
-  padding-block: 10px;
+  padding-block: 15px;
+  padding-inline: 12px;
   margin-block: 5px;
-  width: 250px;
-  border-radius: 3px;
+  margin-inline: 10px;
+  border-radius: 8px;
 }
 
-.categories-list a:hover {
+.subcategories-list a:hover {
   color: var(--secondary);
   background-color: #252525;
+}
+
+.sportingSpecial a {
+  padding-inline: 6px;
 }

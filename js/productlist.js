@@ -9,6 +9,13 @@ function showProducts(products) {
 
 function showProduct(product) {
   console.log(product);
+
+  document.querySelector(".breadcrumbs .category").textContent = product.category;
+
+  document.querySelector(".breadcrumbs .subcategory").textContent = product.subcategory;
+
+  document.querySelector("h2").textContent = product.subcategory;
+
   //fang template
   const template = document.querySelector("#smallProductTemplate").content;
   //Lav en kopi
@@ -22,15 +29,23 @@ function showProduct(product) {
 
   copy.querySelector(".price").textContent = product.price;
 
+  let newPrice = product.price - (product.price * product.discount) / 100;
+  newPrice = newPrice.toFixed(0);
+  console.log(newPrice);
+
+  copy.querySelector(".readMore").setAttribute("href", `product.html?id=${product.id}`);
   if (product.soldout) {
     //Produktet er udsolgt
     copy.querySelector("article").classList.add("soldOut");
+    console.log(copy);
+    copy.querySelector(".readMore").remove();
   }
 
   if (product.discount) {
     //Produktet er på udsalg
     copy.querySelector("article").classList.add("onSale");
     copy.querySelector(".procent").textContent = product.discount;
+    copy.querySelector(".priceNow").textContent = newPrice;
   }
 
   //Append
@@ -51,6 +66,22 @@ function showProduct(product) {
   "price": 895,
   "discount": null,
   "brandname": "Nike",
+  "soldout": 0
+}
+
+{
+  "id": 1529,
+  "gender": "Men",
+  "category": "Apparel",
+  "subcategory": "Topwear",
+  "articletype": "Tshirts",
+  "season": "Fall",
+  "productionyear": 2010,
+  "usagetype": "Casual",
+  "productdisplayname": "Tee",
+  "price": 1899,
+  "discount": null,
+  "brandname": "Puma",
   "soldout": 0
 }
 */

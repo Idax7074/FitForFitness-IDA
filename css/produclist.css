@@ -87,6 +87,35 @@ p {
   display: block;
 }
 
+.AddToBasket {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.AddToBasket a {
+  background-color: #252525;
+  color: var(--primary);
+  padding-block: 10px;
+  padding-inline: 10px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.AddToBasket a:hover {
+  background-color: transparent;
+  border: 1px solid #252525;
+}
+
+.AddToBasket a:hover {
+  color: #252525;
+}
+
+article.onSale .discountedBasket a {
+  margin-top: -35px;
+}
+
 .prev {
   margin-right: 5px;
   display: none;
@@ -98,7 +127,7 @@ p {
 }
 
 .discount {
-  margin-left: 40px;
+  margin-left: 20px;
   color: var(--senary);
 }
 
@@ -118,7 +147,7 @@ img {
   border: solid 5px var(--quaternary);
 }
 
-article.soldOut a::before {
+article.soldOut .soldout a::before {
   content: "Sold out";
   position: absolute;
   background-color: #252525;
