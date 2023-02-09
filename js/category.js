@@ -38,7 +38,7 @@ function showSubcategory(subcat) {
   const copy = template.cloneNode(true);
   //Ændre indhold
   copy.querySelector("a").textContent = subcat.subcategory;
-  copy.querySelector("a").href = `productlist.html?subcategories=${subcat.category}`;
+  copy.querySelector("a").href = `productlist.html?subcategory=${subcat.subcategory}`;
   //Append
   document.querySelector(`[data-category="${subcat.category}"] .subcategories-list`).appendChild(copy);
 }

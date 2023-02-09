@@ -1,5 +1,10 @@
 const urlParams = new URLSearchParams(window.location.search);
+const sc = urlParams.get("subcategory");
 const category = urlParams.get("category");
+
+fetch("https://kea-alt-del.dk/t7/api/products?subcategory=" + sc)
+  .then((res) => res.json())
+  .then(showProducts);
 
 fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
   .then((res) => res.json())
