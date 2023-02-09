@@ -55,9 +55,6 @@ function showProduct(product) {
   //Append
   document.querySelector("main").appendChild(copy);
 }
-
-const UrlParams = new URLSearchParams(window.location.search);
-const trends = UrlParams.get("trends");
 /*
 {
   "id": 1163,

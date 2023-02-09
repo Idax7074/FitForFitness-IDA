@@ -27,7 +27,7 @@ main {
   text-decoration: underline;
 }
 
-h2 {
+.newTrendsText h2 {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -36,7 +36,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-h3 {
+.newTrendsText h3 {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -47,7 +47,7 @@ h3 {
   margin-left: 100px;
 }
 
-p {
+.newTrendsText p {
   font-family: "caecilia", sans-serif;
   font-weight: 500;
   font-style: normal;
