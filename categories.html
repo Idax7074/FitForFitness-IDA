@@ -37,7 +37,7 @@
       </div>
     </header>
     <main>
-      <section class="shop-deal shoes">
+      <!-- <div class="shop-deal shoes">
         <div class="grid_1-1">
           <div class="">
             <h2>Get that drip</h2>
@@ -51,34 +51,35 @@
         <div class="shop">
           <a href="productlist.html">shop deals</a>
         </div>
+      </div> -->
+      <section class="categoryPage">
+        <template id="categoryPageTemplate">
+          <article class="categories-list">
+            <div class="categorySubcategory">
+              <h4>Accessories</h4>
+              <a href="productlist.html" class="read-more">Read more</a>
+            </div>
+            <div class="subcategories-list"></div>
+          </article>
+        </template>
       </section>
-      <section>
-        <article class="categories-list">
-          <div class="categorySubcategory">
-            <h4>Accessories</h4>
-            <a href="productlist.html">Read more</a>
-          </div>
-          <div class="subcategories-list">
-            <a href="productlist.html">Bags</a>
-            <a href="productlist.html">Belts</a>
-            <a href="productlist.html">Eyewear</a>
-            <a href="productlist.html">Gloves</a>
-            <a href="productlist.html">Headwear</a>
-            <a href="productlist.html">Shoe accesories</a>
-            <a href="productlist.html">Sports accesories</a>
-          </div>
-        </article>
-
-        <article class="categories-list">
+      <template id="subcategoryPageTemplate">
+        <a href="productlist.html" class="AccessoriesA"><p class="subCategoryP">Bags</p></a>
+      </template>
+      <!-- <article class="categories-list">
           <div class="categorySubcategory">
             <h4>Apparel</h4>
             <a href="productlist.html">Read more</a>
           </div>
           <div class="subcategories-list">
-            <a href="productlist.html">Bottomwear</a>
-            <a href="productlist.html">Dress</a>
-            <a href="productlist.html">Loungewear and nightwear</a>
-            <a href="productlist.html">Topwear</a>
+            <a href="productlist.html" class="ApperelA">Bottomwear</a>
+            <a href="productlist.html" class="ApperelA">Dress</a>
+            <a href="productlist.html" class="ApperelA">Loungewear and nightwear</a>
+            <a href="productlist.html" class="ApperelA">Topwear</a>
+            <a href="productlist.html" class="ApperelA">Topwear</a>
+            <a href="productlist.html" class="ApperelA">Topwear</a>
+            <a href="productlist.html" class="ApperelA">Topwear</a>
+            <a href="productlist.html" class="ApperelA">Topwear</a>
           </div>
         </article>
 
@@ -88,42 +89,45 @@
             <a href="productlist.html">Read more</a>
           </div>
           <div class="subcategories-list">
-            <a href="productlist.html">Flip flops</a>
-            <a href="productlist.html">Sandal</a>
-            <a href="productlist.html">Shoes</a>
-            <a href="productlist.html">Socks</a>
+            <a href="productlist.html" class="FootwearA">Flip flops</a>
+            <a href="productlist.html" class="FootwearA">Sandal</a>
+            <a href="productlist.html" class="FootwearA">Shoes</a>
           </div>
-        </article>
+        </article> -->
 
-        <section class="shop-deal tshirt">
-          <div class="grid_1-1">
-            <div class="t-shirt">
-              <img src="img/t-shirt.webp" alt="T-shirt billede" />
-            </div>
-            <div class="textTshirt">
-              <h2>News</h2>
-              <h3>The latest active wear</h3>
-              <p>Explore our new selection of t-shirts</p>
-            </div>
+      <!-- <div class="shop-deal tshirt">
+        <div class="grid_1-1">
+          <div class="t-shirt">
+            <img src="img/t-shirt.webp" alt="T-shirt billede" />
           </div>
-          <div class="shop wave">
-            <a href="productlist.html">shop deals</a>
+          <div class="textTshirt">
+            <h2>News</h2>
+            <h3>The latest active wear</h3>
+            <p>Explore our new selection of t-shirts</p>
           </div>
-        </section>
+        </div>
+        <div class="shop wave">
+          <a href="productlist.html">shop deals</a>
+        </div>
+      </div> -->
 
-        <article class="categories-list">
+      <!-- <article class="categories-list">
           <div class="categorySubcategory">
             <h4>Personal care</h4>
             <a href="productlist.html">Read more</a>
           </div>
           <div class="subcategories-list">
-            <a href="productlist.html">Eyes</a>
-            <a href="productlist.html">Fragrance</a>
-            <a href="productlist.html">Hair</a>
-            <a href="productlist.html">Lips</a>
-            <a href="productlist.html">Makeup</a>
-            <a href="productlist.html">Nails</a>
-            <a href="productlist.html">Skin care</a>
+            <a href="productlist.html" class="PersonalCareA">Eyes</a>
+            <a href="productlist.html" class="PersonalCareA">Fragrance</a>
+            <a href="productlist.html" class="PersonalCareA">Hair</a>
+            <a href="productlist.html" class="PersonalCareA">Lips</a>
+            <a href="productlist.html" class="PersonalCareA">Makeup</a>
+            <a href="productlist.html" class="PersonalCareA">Nails</a>
+            <a href="productlist.html" class="PersonalCareA">Skin care</a>
+            <a href="productlist.html" class="PersonalCareA">Skin care</a>
+            <a href="productlist.html" class="PersonalCareA">Skin care</a>
+            <a href="productlist.html" class="PersonalCareA">Skin care</a>
+            <a href="productlist.html" class="PersonalCareA">Skin care</a>
           </div>
         </article>
 
@@ -133,13 +137,8 @@
             <a href="productlist.html">Read more</a>
           </div>
           <div class="subcategories-list sportingSpecial">
-            <a href="productlist.html">Bags</a>
-            <a href="productlist.html">Water bottle</a>
-            <a href="productlist.html">Wristband</a>
-            <a href="productlist.html">Gloves</a>
-            <a href="productlist.html">Headwear</a>
-            <a href="productlist.html">Shoe accesories</a>
-            <a href="productlist.html">Sports accesories</a>
+            <a href="productlist.html" class="sportingGoodsA">Bags</a>
+            <a href="productlist.html" class="sportingGoodsA">Water bottle</a>
           </div>
         </article>
 
@@ -149,10 +148,10 @@
             <a href="productlist.html">Read more</a>
           </div>
           <div class="subcategories-list">
-            <a href="productlist.html">Free gifts</a>
+            <a href="productlist.html" class="freeItemsA">Free gifts</a>
+            <a href="productlist.html" class="freeItemsA">Free gifts</a>
           </div>
-        </article>
-      </section>
+        </article> -->
     </main>
     <footer id="footer">
       <div class="footer">
@@ -194,5 +193,6 @@
       </div>
     </footer>
     <script src="js/burgermenu.js"></script>
+    <script src="js/category.js"></script>
   </body>
 </html>

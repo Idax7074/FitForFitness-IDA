@@ -96,6 +96,7 @@ h4 {
 
 .subcategories-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .categorySubcategory {
