@@ -1,0 +1,57 @@
+main {
+  max-width: none;
+}
+
+.newTrends {
+  margin-top: 100px;
+  background-color: var(--secondary);
+  padding-block: 100px;
+}
+
+.newTrendsText {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.trends {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--tertiary);
+  font-family: "caecilia", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.trends:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+
+p {
+  font-family: "caecilia", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
